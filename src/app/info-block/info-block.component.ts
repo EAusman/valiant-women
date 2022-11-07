@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class InfoBlockComponent implements OnInit {  
   @Input() name = ''
-  @Input() timePeriod =0;
+  @Input() timePeriod = 0;
   @Input() date = '';
   @Input() paragraph = '';
   @Input() photoUrl = '';
