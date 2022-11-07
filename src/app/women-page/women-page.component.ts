@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import people from '../../assets/people.json';
 
 @Component({
   selector: 'app-women-page',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./women-page.component.css']
 })
 export class WomenPageComponent implements OnInit {
+  //  read in the JSON File. 
+  title = 'json-file';
+  public people:{name:string, timePeriod:number, year:string, paragraph:string}[] = people; 
 
   constructor() { }
 
