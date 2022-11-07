@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MaterialModule } from './material/material.module';
+import { WomenPageComponent } from './women-page/women-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    WomenPageComponent
   ],
   imports: [
     BrowserModule,
