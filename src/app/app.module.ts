@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MaterialModule } from './material/material.module';
 import { WomenPageComponent } from './women-page/women-page.component';
+import { InfoBlockComponent } from './info-block/info-block.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    WomenPageComponent
+    WomenPageComponent,
+    InfoBlockComponent
   ],
   imports: [
     BrowserModule,
