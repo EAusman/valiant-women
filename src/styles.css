@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body {background-color:#FFF4E4;}
+
+@font-face {
+	font-family: myFirstFont;
+	src: url(Montserrat-Regular.otf);
+  }
+
+  body {
+	font-family: myFirstFont;
+  }
