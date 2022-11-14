@@ -9,7 +9,7 @@ import people from '../../assets/people.json';
 export class WomenPageComponent implements OnInit {
   //  read in the JSON File. 
   title = 'json-file';
-  public people:{name:string, timePeriod:number, year:string, paragraph:string, photo:string}[] = people; 
+  public people:{name:string, timePeriod:number, year:string, paragraph:string, photo:string, source:string}[] = people; 
 
   constructor() { }
 
