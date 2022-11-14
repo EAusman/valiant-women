@@ -11,6 +11,7 @@ export class InfoBlockComponent implements OnInit {
   @Input() date = '';
   @Input() paragraph = '';
   @Input() photoUrl = '';
+  @Input() link = 'https://material.angular.io/components/card/examples';
   constructor() { }
 
   ngOnInit(): void {
