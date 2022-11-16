@@ -1,0 +1,18 @@
+mat-expansion-panel {
+  /* min-height: 200pt; */
+  background-color: aqua;
+}
+h2{
+  color: #000;
+}
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+summary{
+ background-color: #759AAB;
+}
+mat-card{ color: #FFF4E4; font-family: 'Trocchi', serif; font-size: 30px; font-weight: normal; line-height: 48px; margin: 2px; }
+p { color: #496A81; font-family: 'Trocchi', sans-serif; font-size: 18px; line-height: 32px; margin: 10px 0 10px; }

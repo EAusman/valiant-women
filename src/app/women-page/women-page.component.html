@@ -1,8 +1,14 @@
-<body>
-  <div>
-    <span *ngFor="let person of this.people">
-    <app-info-block [name] = "person.name"[timePeriod]="person.timePeriod"[date]="person.year"[paragraph]="person.paragraph"[photoUrl]="person.photo"[link]="person.source"></app-info-block>
-  </span>
-</div>
-
-</body>
+    <p>
+      Welcome to the Valient Women website! Click on a time period to learn more about Valient LDS women who lived during that time.
+    </p>
+     <span *ngFor= "let i of [1,2,3,4,5,6]"> 
+      <details >
+        <summary>
+          <mat-card>Time period {{i}}</mat-card>
+        </summary>
+          <span *ngFor="let person of getPeople(i)">
+            <app-info-block [name] = "person.name"[timePeriod]="person.timePeriod"[date]="person.year"[paragraph]="person.paragraph"[photoUrl]="person.photo"[link]="person.source"></app-info-block>
+            </span> 
+      </details>
+     
+     </span>  
