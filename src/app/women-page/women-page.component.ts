@@ -26,5 +26,26 @@ export class WomenPageComponent implements OnInit {
     }
     return peopleByPeriod;
   }
+  getTimePeriodName(period: number){
+    if(period ==1){
+      return "Beginnings (1820-1831)"
+    }
+    else if(period ==2){
+      return "Two Church Centers (1831-1838)"
+    }
+    else if(period ==3){
+      return "Nauvoo (1839-1845)"
+    }
+    else if(period == 4){
+      return "Church in the West (1846-1949)"
+    }
+    else if(period ==5){
+      return "Expansion (1950-1989)"
+    }
+    else{
+      return "Worldwide Church (1990-Present)"
+    }
+    
+  }
 
 }

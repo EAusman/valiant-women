@@ -4,7 +4,7 @@
      <span *ngFor= "let i of [1,2,3,4,5,6]"> 
       <details >
         <summary>
-          <mat-card>Time period {{i}}</mat-card>
+          <mat-card>{{getTimePeriodName(i)}}</mat-card>
         </summary>
           <span *ngFor="let person of getPeople(i)">
             <app-info-block [name] = "person.name"[timePeriod]="person.timePeriod"[date]="person.year"[paragraph]="person.paragraph"[photoUrl]="person.photo"[link]="person.source"></app-info-block>
