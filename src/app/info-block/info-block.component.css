@@ -1,18 +1,31 @@
 .example-card {
-  max-width: 400px;
+  max-width: 100%;
   background-color:#759AAB;
   margin-bottom: 20px;
 }
 
 button {
   background-color: #8B575C;
-  
 }
 a{
   color: #FFF4E4;
   text-decoration: none;
 }
-
-mat-card-title{ color: #FFF4E4; font-family: 'Trocchi', serif; font-size: 40px; font-weight: normal; line-height: 48px; margin: 0; }
+mat-card-title{ color: #FFF4E4; font-family: 'Trocchi', serif; font-size: 40px; font-weight: normal; line-height: 48px; margin: 5px; }
 mat-card-subtitle { color: #496A81; font-family: 'Source Sans Pro', sans-serif; font-size: 28px; font-weight: 400; line-height: 32px; margin: 0 0 24px; }
-p { color: #FFF4E4; font-family: 'Source Sans Pro', sans-serif; font-size: 18px; line-height: 32px; margin: 0 0 24px; }
+p { color: #FFF4E4; font-family: 'Source Sans Pro', sans-serif; font-size: 18px; line-height: 32px; margin:25px; }
+@media screen and (min-width: 1000px) {
+  .example-card {
+    max-width: 100%;
+    background-color:#759AAB;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+}
+@media screen and (max-width: 1000px) {
+  p{
+    margin: 0 0 25px;
+  }
+}

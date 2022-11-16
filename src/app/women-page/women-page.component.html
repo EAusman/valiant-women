@@ -6,9 +6,12 @@
         <summary>
           <mat-card>{{getTimePeriodName(i)}}</mat-card>
         </summary>
+        <div>
           <span *ngFor="let person of getPeople(i)">
             <app-info-block [name] = "person.name"[timePeriod]="person.timePeriod"[date]="person.year"[paragraph]="person.paragraph"[photoUrl]="person.photo"[link]="person.source"></app-info-block>
             </span> 
+        </div>
+          
       </details>
      
      </span>  
